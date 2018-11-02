@@ -4,7 +4,7 @@ FROM golang:1.11.1-stretch as go-build
 RUN go get -u github.com/CzarSimon/appv
 RUN go install github.com/CzarSimon/appv
 
-FROM jenkins:2.60.3
+FROM jenkins/jenkins:2.149
 
 # Switch to root user for binary installations.
 USER root
